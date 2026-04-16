@@ -1,0 +1,133 @@
+.workspace-container {
+    background-color: #f8f9fa; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    height: 100%;
+    padding: 2rem 0;
+}
+
+/* The "Paper" - where the user types */
+.tiptap-paper {
+    background-color: white;
+    width: 100%;
+    max-width: 850px; /* Standard A4 width-ish */
+    min-height: 1056px; /* Standard A4 height */
+    padding: 1.5in 1in; /* Professional document margins */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: 1px solid #e0e0e0;
+    margin-bottom: 3rem;
+    cursor: text;
+}
+
+/* Toolbar styling */
+.modern-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #ffffff;
+    border-bottom: 1px solid #dadce0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    justify-content: center;
+}
+
+.toolbar-btn {
+    padding: 6px;
+    border-radius: 4px;
+    color: #444746;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar-btn:hover {
+    background-color: #f1f3f4;
+}
+
+.toolbar-btn.is-active {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+/* Fix for the Tiptap focus outline */
+.tiptap:focus {
+    outline: none;
+}
+
+/* Custom Scrollbar */
+.workspace-container::-webkit-scrollbar {
+    width: 8px;
+}
+.workspace-container::-webkit-scrollbar-thumb {
+    background: #bdc1c6;
+    border-radius: 4px;
+}
+
+/* Container for the toolbar */
+.modern-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dadce0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* Base button style - Stripping default browser borders */
+.toolbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none; /* Removes the box look */
+    border-radius: 4px;
+    color: #444746;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Hover effect */
+.toolbar-btn:hover {
+    background-color: #f1f3f4;
+}
+
+/* Active state (when Bold/Italic is ON) */
+.toolbar-btn.is-active {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+/* Dropdown styling */
+.toolbar-select {
+    height: 28px;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #444746;
+    padding: 0 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.toolbar-select:hover {
+    background-color: #f1f3f4;
+}
+
+/* Vertical Divider */
+.toolbar-divider {
+    width: 1px;
+    height: 20px;
+    background-color: #dadce0;
+    margin: 0 4px;
+}

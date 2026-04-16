@@ -1,0 +1,12 @@
+# Root-level ignore
+node_modules/
+.env
+
+# Frontend specific
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Backend specific
+backend/node_modules/
+backend/data/
