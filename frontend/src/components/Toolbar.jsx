@@ -14,7 +14,6 @@ const Toolbar = ({ editor }) => {
     <button
       onClick={(e) => { e.preventDefault(); onClick(); }}
       title={title}
-      // We swap the Tailwind string for our clean CSS classes
       className={`toolbar-btn ${isActive ? 'is-active' : ''}`}
     >
       {children}
@@ -61,7 +60,6 @@ const Toolbar = ({ editor }) => {
 
       <div className="toolbar-divider" />
 
-      {/* Lists & Alignment */}
       <IconButton onClick={() => editor.chain().focus().toggleBulletList().run()} isActive={editor.isActive('bulletList')} title="Bullet Points">
         <List size={18} />
       </IconButton>
@@ -80,7 +78,7 @@ const Toolbar = ({ editor }) => {
 
       <div className="toolbar-divider" />
 
-      {/* Typography: Font Family */}
+      
       <select 
         onChange={e => editor.chain().focus().setFontFamily(e.target.value).run()}
         className="toolbar-select"
@@ -94,7 +92,7 @@ const Toolbar = ({ editor }) => {
 
       <div className="toolbar-divider" />
 
-      {/* Color Picker Section */}
+      
       <div className="flex items-center gap-1 hover:bg-gray-100 p-1 rounded transition-colors cursor-pointer relative">
         <Palette size={16} className="text-gray-500" />
         <input
@@ -103,7 +101,7 @@ const Toolbar = ({ editor }) => {
           className="w-5 h-5 p-0 border-none cursor-pointer bg-transparent absolute opacity-0 w-full h-full left-0"
           title="Text Color"
         />
-        {/* Visual indicator of current color */}
+        
         <div 
           className="w-4 h-1 rounded-full mt-4 absolute bottom-1" 
           style={{ backgroundColor: editor.getAttributes('textStyle').color || '#000000' }}

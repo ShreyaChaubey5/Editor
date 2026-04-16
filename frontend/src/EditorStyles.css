@@ -82,7 +82,7 @@
     z-index: 50;
 }
 
-/* Base button style - Stripping default browser borders */
+
 .toolbar-btn {
     display: flex;
     align-items: center;

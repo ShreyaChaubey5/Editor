@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Collaboration from '@tiptap/extension-collaboration';
-// Added missing extensions for your requirements
 import Underline from '@tiptap/extension-underline';
 import {TextStyle} from '@tiptap/extension-text-style';
 import {Color} from '@tiptap/extension-color';
@@ -11,7 +10,7 @@ import {FontFamily} from '@tiptap/extension-font-family';
 import {TextAlign} from '@tiptap/extension-text-align';
 import * as Y from 'yjs';
 import { WebsocketProvider } from 'y-websocket';
-import Toolbar from './Toolbar'; // We will create this below
+import Toolbar from './Toolbar'; 
 
 const Editor = () => {
   const { id: roomId } = useParams();
@@ -69,7 +68,6 @@ const TiptapInstance = ({ ydoc }) => {
     extensions,
     editorProps: {
       attributes: {
-        // This makes it look like a professional paper
         class: 'prose prose-slate max-w-none mx-auto focus:outline-none min-h-[500px] p-10',
       },
     },
