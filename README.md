@@ -18,6 +18,7 @@ latency and zero conflicts.
 **Professional UI**: A "paper-on-desk" aesthetic with a centered document canvas and floating toolbars.
 
 **Project Structure**
+
 Editor/
 ├── backend/
 │   ├── data/                # Local LevelDB persistence storage
@@ -36,6 +37,7 @@ Editor/
 │   └── package.json            # Frontend dependencies
 └── README.md
 
+
 **How to Run the Project**
 1. Prerequisite
 Ensure you have Node.js installed on your system.
@@ -45,14 +47,20 @@ Open two separate terminals for the backend services:
 
 Terminal 1 (Sync Server):
 cd backend
+
 npm install
+
 node yjs-server.cjs
 
 Terminal 2 (Chat Server):
 cd backend
+
 node index.js
 
 Frontend Setup
 cd frontend
+
 npm install --legacy-peer-deps
+
 npm run dev
+
