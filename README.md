@@ -1,4 +1,5 @@
 **CollabDocs: Real-Time Collaborative Suite**
+
 CollabDocs is a professional-grade, full-stack collaborative document editor. 
 It leverages CRDTs (Conflict-free Replicated Data Types) to allow multiple users to edit the same document simultaneously with sub-millisecond
 latency and zero conflicts.
