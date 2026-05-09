@@ -24,7 +24,7 @@ Editor/
 │   ├── data/                # Local LevelDB persistence storage
 │   ├── index.js             # Socket.io Chat Server (Port 4000)
 │   ├── yjs-server.cjs       # Yjs Sync Server (Port 1234)
-│   └── package.json         # Backend dependencies
+│└── package.json         # Backend dependencies
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
